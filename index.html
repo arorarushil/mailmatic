@@ -216,7 +216,7 @@
   <div class="card">
     <div class="card-icon">🔀</div>
     <h3>Mail merge tags</h3>
-    <p>Use {{Name}}, {{Company}}, {{Role}} to personalise each email from your sheet columns.</p>
+    <p>Personalise each email with the recipient's name, designation, and company — pulled directly from your sheet columns.</p>
   </div>
   <div class="card">
     <div class="card-icon">🔄</div>
@@ -237,22 +237,22 @@
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-body">
-          <h4>Paste the code into Apps Script</h4>
-          <p>Open your sheet → Extensions → Apps Script. Paste <code>appsscript.json</code> and <code>SendEngine.gs</code> from the GitHub repo.</p>
+          <h4>Connect a Google Cloud project</h4>
+          <p>Create a GCP project, enable Gmail API, and attach the project number in Apps Script → Project Settings.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <div class="step-body">
-          <h4>Connect your Google Cloud project</h4>
-          <p>Create a GCP project, enable Gmail API, and attach the project number in Apps Script → Project Settings.</p>
+          <h4>Add the files</h4>
+          <p>In Apps Script, enable the manifest (Project Settings → Show <code>appsscript.json</code>), then paste both files from the GitHub repo.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <div class="step-body">
-          <h4>Format your sheet</h4>
-          <p>Columns: Name | Designation | Company | Recipient (email) | Merge status | Note. Row 1 is the header.</p>
+          <h4>Format your sheet and configure the script</h4>
+          <p>Columns: Name | Designation | Company | Recipient | Merge status | Note. Set your subject, sender name, and email body in <code>SendEngine.gs</code>.</p>
         </div>
       </div>
       <div class="step">
