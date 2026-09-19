@@ -81,9 +81,9 @@ Update `buildHtmlBody_(name, designation, company)` with your actual email body 
 ### Step 5 — Test
 
 1. In Apps Script: select `dryRun` from the function dropdown → **Run**
-2. Open **Execution log** — you should see the first 3 emails rendered with merge tags filled in and a confirmation that nothing was sent
-3. When satisfied, select `sendAll` → **Run**
-4. Google will ask for OAuth permissions on first run — approve them
+2. Google will ask for OAuth permissions on first run — approve them
+3. Open **Execution log** — you should see the first 3 emails rendered with merge tags filled in and a confirmation that nothing was sent
+4. When satisfied, select `sendAll` → **Run**
 5. Check the **Merge status** column in your sheet for progress
 
 ---
@@ -113,9 +113,8 @@ Apps Script's `MailApp` and `GmailApp` share a quota of ~100 emails/day on free 
 "https://www.googleapis.com/auth/spreadsheets.currentonly"
 "https://www.googleapis.com/auth/script.scriptapp"
 "https://www.googleapis.com/auth/script.container.ui"
+"https://www.googleapis.com/auth/script.send_mail"
 ```
-
-`gmail.send` is a **Sensitive** scope (not Restricted), so Google's verification review is free and typically takes 4–6 weeks. No CASA security audit required.
 
 ---
 
@@ -127,4 +126,4 @@ MIT — use, fork, and modify freely.
 
 ## Contact
 
-Rushil Arora · [rxshxl100@gmail.com](mailto:rxshxl100@gmail.com) (for bugs, questions, or OAuth verification enquiries)
+Rushil Arora · [rxshxl100@gmail.com](mailto:rxshxl100@gmail.com)
